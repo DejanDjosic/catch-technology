@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding-top: 2vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bin-wrapper {
+  align-self: flex-end;
+}
+
+.bin {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 25px);
+  transition: left 0.15s linear;
+  z-index: 1;
+}
+
+.collision-object {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.angular,
+.react,
+.javascript,
+.css {
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  position: absolute;
+}
+
+.angular {
+  background-image: url('../img/angular.png');
+}
+
+.css {
+  background-image: url('../img/css.png');
+}
+
+.javascript {
+  background-image: url('../img/javascript.png');
+}
+
+.react {
+  background-image: url('../img/react.png');
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bin img {
+  width: 80px;
+}
+
+.technologies-wrapper {
+  position: relative;
+}
+
+.bin-wrapper {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+}
+
+.game-wrapper {
+  background-color: #f2f2ff;
+  box-shadow: 0 0 10px #4169e1;
+  width: 60vw;
+  height: 80vh;
+  margin: 2.5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo-img {
+  max-height: 5vh;
+}
+.score-div {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 10px;
+  flex-direction: row;
+}
+
+.score {
+  margin-left: 10px;
+}
+.circle-cell {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+.lives {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.hidden {
+  display: none;
+}
+
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px black;
+}
+.game-over-modal {
+  top: 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  height: 180px;
+  width: 300px;
+  box-shadow: 0 0 10px #4169e1;
+}
+
+button {
+  width: 100px;
+  padding: 15px;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+button:hover {
+  background-color: #f0a202;
+  color: black;
+  font-weight: bold;
+}
